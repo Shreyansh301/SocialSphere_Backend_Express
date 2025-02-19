@@ -1,6 +1,7 @@
 ### Screenshot
 
-<img width="1440" alt="Screenshot 2025-02-19 at 1 16 55 PM" src="https://github.com/user-attachments/assets/f91c7bf4-c9ba-4c34-b1e0-e99fc3da27d8" />
+<img width="1440" alt="Screenshot 2025-02-19 at 1 36 33 PM" src="https://github.com/user-attachments/assets/db281f16-40b8-4dd2-924e-18fe1c5e371a" />
+
 
 ### Server deployed on ```Railway```
 
