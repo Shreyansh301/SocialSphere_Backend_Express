@@ -95,15 +95,15 @@ userSchema.statics.getFriendRequests = async function (username) {
   );
 };
 
-// Get friend requests with user details
-userSchema.statics.getFriendRequests = async function (username) {
+// Get friends with user details
+userSchema.statics.getFriends = async function (username) {
   const user = await this.findOne({ username });
   if (!user) {
     throw new Error('User not found');
   }
   return this.find(
-    { username: { $in: user.friendRequests } },
-    { username: 1, email: 1, profilePicture: 1 }
+    { username: { $in: user.friends } },
+    { username: 1, email: 1 }
   );
 };
 
