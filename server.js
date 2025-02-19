@@ -7,7 +7,6 @@ const limiter = require('./middleware/rateLimiter');
 const securityMiddleware = require('./middleware/security');
 const routes = require('./routes');
 
-
 // Connect to MongoDB
 connectDB();
 
@@ -20,7 +19,7 @@ app.use('/', routes);
 
 //Routes 
 app.get("/", (req, res) => {
-    res.send("Backend is running!");
+    res.send("SocialSphere Backend is running!");
   });
 
 app.listen(PORT, ()=> console.log(`server started at PORT:${PORT}`))
