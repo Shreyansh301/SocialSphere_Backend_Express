@@ -5,6 +5,7 @@ const PORT = process.env.PORT || 8000;
 const connectDB = require('./config/db');
 const limiter = require('./middleware/rateLimiter');
 const securityMiddleware = require('./middleware/security');
+const routes = require('./routes');
 
 
 // Connect to MongoDB
@@ -13,6 +14,9 @@ connectDB();
 // Middleware
 securityMiddleware(app);
 app.use(limiter);
+
+// Routes
+app.use('/', routes);
 
 //Routes 
 app.get("/", (req, res) => {
