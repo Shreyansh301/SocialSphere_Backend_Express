@@ -1,6 +1,12 @@
+require('dotenv').config();
 const express = require("express");
 const app = express ()
 const PORT = 8000;
+const connectDB = require('./config/db');
+
+
+// Connect to MongoDB
+connectDB();
 
 //Routes 
 app.get("/", (req, res) => {
